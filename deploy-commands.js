@@ -27,13 +27,11 @@ const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('
 
 for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
-    if (file === 'owner.js') {
+    if (file !== 'owner.js') {
         // If the file is owner.js, add it to the dev/guild list.
-        devCommands.push(command.data.toJSON());
-    } else {
-        // Otherwise, add it to the global list.
         globalCommands.push(command.data.toJSON());
-    }
+    } 
+    devCommands.push(command.data.toJSON());
 }
 
 const rest = new REST({ version: '10' }).setToken(DISCORD_TOKEN);
