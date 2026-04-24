@@ -6,7 +6,7 @@ const { getRateLimitDayString } = require('../utils/time.js');
 const { isSupporter, getSupporterSet, isGroupSupported } = require('../utils/supporterManager.js');
 const { uploadDatabase } = require('../utils/backupManager.js');
 
-const BOT_OWNER_ID = '182938628643749888';
+const BOT_OWNER_ID = '271320187876147201';
 const PREMIUM_SKU_ID = '1436488229455925299';
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
