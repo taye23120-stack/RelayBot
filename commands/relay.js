@@ -3,7 +3,7 @@ const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } = require('disc
 const db = require('../db/database.js');
 const { isSupporter } = require('../utils/supporterManager.js');
 
-const BOT_OWNER_ID = '182938628643749888';
+const BOT_OWNER_ID = '271320187876147201';
 
 module.exports = {
     data: new SlashCommandBuilder()
